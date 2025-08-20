@@ -3,8 +3,8 @@
 ## Usage
 
 ```
-- image: roundrop/schemaspy-with-pgclient:6.1.0
-- image: postgres:13.14
+- image: roundrop/schemaspy-with-pgclient:6.2.4
+- image: postgres:16.9
 :
-run: cd / && /entrypoint.sh -t pgsql -host 127.0.0.1 -port 5432 -s public -u user -p password -db dbname -hq
+- run: cd / && /usr/local/bin/schemaspy -t pgsql11 -host 127.0.0.1 -port 5432 -s public -u user -p password -db dbname -hq -vizjs
 ```
