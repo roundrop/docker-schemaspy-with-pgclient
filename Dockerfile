@@ -1,4 +1,4 @@
-FROM schemaspy/schemaspy:6.1.0
+FROM schemaspy/schemaspy:6.2.4
 USER root
 
 ENV DOCKERIZE_VERSION v0.6.1
